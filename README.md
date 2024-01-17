@@ -2,7 +2,7 @@
 
 # 前提
 
-- Node.js を利用できること または Docker および docker-compose を利用できること
+- Node.js を利用できること または Docker および docker compose を利用できること
 
 # ローカル環境構築
 

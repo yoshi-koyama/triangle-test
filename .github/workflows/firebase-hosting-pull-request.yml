@@ -8,10 +8,10 @@ jobs:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TRIANGLE_DEMO_20E1D }}'
-          projectId: triangle-demo-20e1d
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TRIANGLE_TEST_A193B }}'
+          projectId: triangle-test-a193b
